@@ -203,14 +203,14 @@ img {
 }
 .carousel {
   position: relative;
-  height: 60vh;
+  height: 80vh;
   width: 100%;
-  margin: 0 auto;
-  margin-bottom: 20vh;
+  overflow: hidden;
 }
 .carousel .carousel__track-container {
   height: 100%;
   position: relative;
+  width: 100%;
 }
 .carousel .carousel__track-container .carousel__track {
   padding: 0;
@@ -219,11 +219,11 @@ img {
   position: relative;
   height: 100%;
   transition: transform 250ms ease-in;
+  width: 100%;
 }
 .carousel .carousel__track-container .carousel__track .carousel__slide {
   position: absolute;
   top: 0;
-  bottom: -20vh;
   width: 100%;
 }
 .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__images {
@@ -271,7 +271,7 @@ img {
 }
 .achieve {
   width: 100%;
-  height: 50vh;
+  height: 40vh;
   background-color: #75B6ED;
   padding: 20px;
   display: flex;

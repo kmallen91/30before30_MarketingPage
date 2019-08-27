@@ -2,13 +2,17 @@
  //   Carousel of pictures with text to grab attention of user and draw them to sign up
 .carousel{
     position:relative;
-    height: 60vh;
+    height: 80vh;
     width:100%;
-    margin: 0 auto;
-    margin-bottom:20vh;
+    // margin: 0 auto;
+    // margin-bottom:20vh;
+    overflow:hidden;
+    
     .carousel__track-container{
         height:100%;
         position:relative;
+        width:100%;
+        
 
         .carousel__track{
             padding:0;
@@ -17,13 +21,14 @@
             position:relative;
             height: 100%;
             transition: transform 250ms ease-in;
+            width:100%;
+            
 
             .carousel__slide{
+                
                 position:absolute;
                 top:0;
-                bottom:-20vh;
-                width:100%;
-                // height:35vh;
+                width:100%;                
                 .carousel__images{
                      width:100%;
                      height:100%;
@@ -37,7 +42,6 @@
     .carousel__button{
         position:absolute;
         top:50%;
-        // transform:translateY(-50%);
         height:150px;
         background:transparent;
         border:0;
@@ -88,7 +92,7 @@
 // Achieve button allows user to access app and sign up
 .achieve{
     width: 100%;
-    height:50vh;
+    height:40vh;
     background-color: @lightblue;
     padding:20px;
     display:flex;
