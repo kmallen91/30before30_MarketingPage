@@ -1,4 +1,5 @@
  // home
+ //   Carousel of pictures with text to grab attention of user and draw them to sign up
 .carousel{
     position:relative;
     height: 60vh;
@@ -13,6 +14,9 @@
             padding:0;
             margin:0;
             list-style:none;
+            position:relative;
+            height: 100%;
+            transition: transform 250ms ease-in;
 
             .carousel__slide{
                 position:absolute;
@@ -72,9 +76,13 @@
         background:rgba(0,0,0,.3);
         margin: 0 10px;
         cursor:pointer;
+
+        .current-slide{
+            background: rgba(0,0,0,.75);
+        }
     }
 }
-
+// Achieve button allows user to access app and sign up
 .achieve{
     width: 100%;
     height:50vh;
@@ -94,55 +102,7 @@
     }
 }
 
-
-// .section2{
-//     display:flex;
-//     flex-direction:column;
-//     flex-wrap:wrap;
-//     justify-content:center;
-//     align-items: flex-start;
-//     background-color: @main-bg;
-//     height:50vh;
-//     padding-top:0px;
-
-//     // .bucket{
-        
-//     h2{
-//         width:100%;
-//         // display:flex;
-//         justify-content: center;
-//         align-items:flex-start;
-//     }
-// // }
-//     .moutain{
-//         width:100%;
-//         height:15vh;
-//     }
-
-//     p{
-//         padding:20px;
-//         margin:20px;
-//         font-size:2.5rem;
-//     }
-
-
-// }
-
-// .section3{
-//     display:flex;
-//     flex-wrap:wrap;
-//     flex-direction:column;
-//     justify-content:space-between;
-//     align-items:center;
-//     background-color: @second-bg;
-//     height:40vh;
-//     font-size:4rem;
-//     word-spacing:20px;
-    
-//     h3{
-//         padding:20px;
-//     }
-// }
+//Footer, allows user to access About Us page, log in or access the app
 
 footer{
     background-color:@black;

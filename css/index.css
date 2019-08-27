@@ -216,6 +216,9 @@ img {
   padding: 0;
   margin: 0;
   list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 250ms ease-in;
 }
 .carousel .carousel__track-container .carousel__track .carousel__slide {
   position: absolute;
@@ -259,6 +262,9 @@ img {
   background: rgba(0, 0, 0, 0.3);
   margin: 0 10px;
   cursor: pointer;
+}
+.carousel .carousel__indicator .current-slide {
+  background: rgba(0, 0, 0, 0.75);
 }
 .achieve {
   width: 100%;
