@@ -266,6 +266,9 @@ img {
 .carousel .carousel__indicator .current-slide {
   background: rgba(0, 0, 0, 0.75);
 }
+.carousel .is-hidden {
+  display: none;
+}
 .achieve {
   width: 100%;
   height: 50vh;
