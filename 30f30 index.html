@@ -1,6 +1,8 @@
 <!-- 30 for 30 Bucket list Marketing page -->
-<html>
+<html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title> 30 for 30 </title>
 <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/index.css" />
@@ -11,7 +13,7 @@
     <div class="top">
     
         <div class="title">
-           <h1>30 Before 30</h1>
+           <img src="imgs/30f30.png" alt="">
          </div>
          
        <nav class="navbar">
@@ -25,22 +27,60 @@
       </div>
       </nav>
       </div>
-<div class="achieve">
-<button>Achieve your Dreams!</button>
+
+<div class="carousel">
+  <button class="carousel__button button-left">
+      <img src="imgs/left-arr.png" alt="">
+  </button>
+  
+  <div class="carousel__track-container">
+    <ul class="carousel__track">
+      <li class="carousel__slide">
+        <img class="carousel__images" src="imgs/mountain-top.jpg" alt="">
+      </li>
+      <li class="carousel__slide">
+        <img class="carousel__images" src="imgs/friends.jpg" alt="">
+      </li>
+      <li class="carousel__slide">
+        <img class="carousel__images" src="imgs/skydive.jpg" alt="">
+      </li>    
+    </ul>
+      
+
+  </div>
+<button class="carousel__button button-right">
+    <img src="imgs/right-arr.png" alt="">
+</button>
+
+<div class="carousel__nav">
+  <button class="carousel__indicator"></button>
+  <button class="carousel__indicator"></button>
+  <button class="carousel__indicator"></button>
 </div>
 
-<section class ="section2">
-<!-- <img> -->
+</div>
+
+
+<section class="achieve">
+<div>
+<button>Achieve your Dreams!<br>
+  <p>Sign up Now!</p>
+</button>
+</div>
+</section>
+
+<!-- <section class ="section2">
+
 <div class="bucket">
 <h2>Create your own interactive Bucket List!</h2>
 </div>
+
 <div>
-<img src="imgs/mountain-top.jpg" class="mountain">
+
 <p>Complete each task before your desired deadline! </p>
 
 
 
-<img src="imgs/skydive.jpg" class="skydive">
 <p>Live your life to the fullest!</p>
 </div>
 
@@ -52,7 +92,7 @@
 
   <img>
   <h3>Share with Friends!</h3>
-</section>
+</section> -->
 
 </body>
 
