@@ -1,6 +1,14 @@
+body{
+    background-color:@blue;
+    color:white;
+
+}
+
+
 .about{
     text-align:center;
     margin:5vh;
+    
     @media @phone{
         margin-top:50vh;
     }
@@ -25,6 +33,7 @@
 
     img{
         width:20vh;
+        .border(2vh solid @rose, 35px );
         @media @phone {    
             margin:2vh;
         }

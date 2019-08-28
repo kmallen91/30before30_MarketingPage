@@ -400,6 +400,10 @@ footer a {
   font-size: 1.6rem;
   padding: 20px;
 }
+body {
+  background-color: #025395;
+  color: white;
+}
 .about {
   text-align: center;
   margin: 5vh;
@@ -421,6 +425,8 @@ footer a {
 }
 .team img {
   width: 20vh;
+  border: 2vh solid #C72E7B;
+  border-radius: 35px;
 }
 @media (max-width: 500px) {
   .team img {
