@@ -183,23 +183,59 @@ img {
   padding-bottom: 0px;
   height: 20vh;
 }
+@media (max-width: 500px) {
+  .top {
+    flex-direction: column;
+    margin-bottom: 0vh;
+    padding-bottom: -40vh;
+  }
+}
 .top .title {
   padding: 15px;
   font-size: 5rem;
   width: 20vh;
+}
+@media (max-width: 500px) {
+  .top .title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: black;
+  }
 }
 .top .navbar {
   font-size: 3rem;
   color: white;
   padding: 15px;
 }
+@media (max-width: 500px) {
+  .top .navbar {
+    background-color: black;
+    width: 100%;
+    text-align: center;
+  }
+}
 .top .navbar .links {
   color: #fff;
+}
+@media (max-width: 500px) {
+  .top .navbar .links {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .top .navbar .links a {
   text-decoration: none;
   color: #fff;
   padding: 20px;
+}
+@media (max-width: 500px) {
+  .top .navbar .links a {
+    background-color: black;
+  }
 }
 .carousel {
   position: relative;
@@ -207,10 +243,20 @@ img {
   width: 100%;
   overflow: hidden;
 }
+@media (max-width: 500px) {
+  .carousel {
+    margin-top: 22vh;
+  }
+}
 .carousel .carousel__track-container {
   height: 100%;
   position: relative;
   width: 100%;
+}
+@media (max-width: 500px) {
+  .carousel .carousel__track-container {
+    margin-top: -23vh;
+  }
 }
 .carousel .carousel__track-container .carousel__track {
   padding: 0;
@@ -230,6 +276,12 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+@media (max-width: 500px) {
+  .carousel .carousel__track-container .carousel__track .carousel__slide .carousel__images {
+    object-fit: scale-down;
+    margin-top: 22vh;
+  }
 }
 .carousel .carousel__button {
   position: absolute;
@@ -253,6 +305,7 @@ img {
   display: flex;
   justify-content: center;
   margin-top: 20vh;
+  display: none;
 }
 .carousel .carousel__indicator {
   border: 0;
@@ -278,6 +331,11 @@ img {
   justify-content: center;
   align-items: flex-end;
   padding-bottom: 0px;
+}
+@media (max-width: 500px) {
+  .achieve {
+    margin-top: -23vh;
+  }
 }
 .achieve button {
   display: block;
@@ -305,14 +363,31 @@ footer {
   color: #fff;
   font-size: 3rem;
 }
-footer .footer {
+@media (max-width: 500px) {
+  footer {
+    margin-top: 10vh;
+  }
+}
+footer .footbar {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 500px) {
+  footer .footbar {
+    flex-wrap: wrap;
+  }
 }
 footer a {
   text-decoration: none;
   color: #fff;
   padding: 20px;
+}
+@media (max-width: 500px) {
+  footer a {
+    width: 100%;
+    background-color: black;
+    text-align: center;
+  }
 }
 .footer {
   width: 100%;

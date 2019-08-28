@@ -8,10 +8,19 @@
     // margin-bottom:20vh;
     overflow:hidden;
     
+    @media @phone{
+        // display:none;
+        margin-top:22vh;
+        
+}
+    
     .carousel__track-container{
         height:100%;
         position:relative;
         width:100%;
+        @media @phone{
+            margin-top:-23vh;
+        }
         
 
         .carousel__track{
@@ -33,6 +42,12 @@
                      width:100%;
                      height:100%;
                     object-fit: cover;
+                    
+                    @media @phone{
+                        object-fit:scale-down;
+                        margin-top:22vh;
+                        // background-color:black;
+                    }
                  }
             }
         }
@@ -70,6 +85,7 @@
         display:flex;
         justify-content: center;
         margin-top: 20vh;
+        display:none;
     }
 
     .carousel__indicator{
@@ -89,6 +105,19 @@
         display:none;
     }
 }
+//Phone width images//
+
+// @media @phone {
+
+// }
+
+
+
+
+
+
+
+
 // Achieve button allows user to access app and sign up
 .achieve{
     width: 100%;
@@ -99,6 +128,10 @@
     justify-content: center;
     align-items:flex-end;
     padding-bottom:0px;
+
+    @media @phone {
+        margin-top:-23vh;
+    }
 
     button{
         .button(@button-bg, 200px, #fff);
@@ -119,15 +152,32 @@ footer{
     align-items: center;
     color:@white;
     font-size:3rem;
+    @media @phone{
+        margin-top:10vh;
+    }
 
-    .footer{
+    .footbar{
         display:flex;
         justify-content:space-around;
+        @media @phone{
+            flex-wrap:wrap;
+            
+            
+        }
     }
 
     a{
         text-decoration: none;
         color:@white;
         padding:20px;
+        @media @phone{
+            width:100%;
+            background-color: black;
+            text-align:center;
+           
+            
+            
+
+        }
         }
 }
