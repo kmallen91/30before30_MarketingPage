@@ -1,6 +1,9 @@
 .about{
     text-align:center;
     margin:5vh;
+    @media @phone{
+        margin-top:50vh;
+    }
 
     h2{
         font-size:4.5rem;
@@ -17,10 +20,14 @@
 .team{
     
     text-align:center;
+    @media @phone {    }
     
 
     img{
         width:20vh;
+        @media @phone {    
+            margin:2vh;
+        }
     }
     
     .teammate{
@@ -30,6 +37,9 @@
     h3{
         font-size: 4rem;
         text-align:left;
+        @media @phone {    
+            padding:5vh;
+        }
     }
 
     h2{
@@ -41,10 +51,14 @@
         .flex(space-around,center);
         flex-wrap:wrap;
         padding-bottom: 5vh;
+        @media @phone {
+            flex-direction: column;
+            }
         
         
         h3{
             text-align:left;
+            
         }
     }
 
@@ -52,15 +66,25 @@
         .flex(space-around,center);
         flex-wrap:wrap;
         padding-bottom: 5vh;
+        @media @phone {
+            flex-direction: column;
+            }
     }
 
     .back{
         .flex(space-between,center);
         padding:5vh;
+        @media @phone {
+            flex-direction: column;
+            
+            }
     }
 
     .lead{
         .flex(space-between,center);
         padding:5vh;
+        @media @phone {
+            flex-direction: column;
+            }
     }
 }

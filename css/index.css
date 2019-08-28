@@ -404,6 +404,11 @@ footer a {
   text-align: center;
   margin: 5vh;
 }
+@media (max-width: 500px) {
+  .about {
+    margin-top: 50vh;
+  }
+}
 .about h2 {
   font-size: 4.5rem;
 }
@@ -417,9 +422,19 @@ footer a {
 .team img {
   width: 20vh;
 }
+@media (max-width: 500px) {
+  .team img {
+    margin: 2vh;
+  }
+}
 .team h3 {
   font-size: 4rem;
   text-align: left;
+}
+@media (max-width: 500px) {
+  .team h3 {
+    padding: 5vh;
+  }
 }
 .team h2 {
   padding-bottom: 10vh;
@@ -432,6 +447,11 @@ footer a {
   flex-wrap: wrap;
   padding-bottom: 5vh;
 }
+@media (max-width: 500px) {
+  .team .ui {
+    flex-direction: column;
+  }
+}
 .team .ui h3 {
   text-align: left;
 }
@@ -442,15 +462,30 @@ footer a {
   flex-wrap: wrap;
   padding-bottom: 5vh;
 }
+@media (max-width: 500px) {
+  .team .front {
+    flex-direction: column;
+  }
+}
 .team .back {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 5vh;
 }
+@media (max-width: 500px) {
+  .team .back {
+    flex-direction: column;
+  }
+}
 .team .lead {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 5vh;
+}
+@media (max-width: 500px) {
+  .team .lead {
+    flex-direction: column;
+  }
 }
