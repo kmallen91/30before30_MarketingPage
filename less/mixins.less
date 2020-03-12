@@ -1,0 +1,38 @@
+// Mixins in here
+
+.flex(@justify, @align){
+    display:flex;
+    justify-content:@justify;
+    align-items:@align;
+
+};
+
+@bg1{
+    background-color:@lightblue
+
+};
+
+@bg2{
+    background-color:@blue;
+};
+
+.border(@border-color, @radius){
+    border:@border-color;
+    border-radius:@radius;
+}
+
+
+.button(@button-bg, @width:200px, @font-color:white){
+    display:block;
+    background-color: #549ec5;
+    margin: 10vh 20vh 10vh 20vh;
+    padding:0px;
+    cursor:pointer;
+    width: 50vh;
+    height:20vh;
+    border-radius:15px;
+    color:white;
+    font-size:4rem;
+    text-align:center;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+} ;

@@ -1,0 +1,99 @@
+body{
+    background-color:@blue;
+    color:white;
+
+}
+
+
+.about{
+    text-align:center;
+    margin:5vh;
+    
+    @media @phone{
+        margin-top:50vh;
+    }
+
+    h2{
+        font-size:4.5rem;
+    }
+
+    p{
+        padding:2vh;
+        font-size:2rem;
+    }
+
+    
+}
+
+.team{
+    
+    text-align:center;
+    @media @phone {    }
+    
+
+    img{
+        width:20vh;
+        .border(2vh solid @rose, 35px );
+        @media @phone {    
+            margin:2vh;
+        }
+    }
+    
+    .teammate{
+        
+    }
+
+    h3{
+        font-size: 4rem;
+        text-align:left;
+        @media @phone {    
+            padding:5vh;
+        }
+    }
+
+    h2{
+        padding-bottom:10vh;
+        text-decoration: underline;
+    }
+
+    .ui{
+        .flex(space-around,center);
+        flex-wrap:wrap;
+        padding-bottom: 5vh;
+        @media @phone {
+            flex-direction: column;
+            }
+        
+        
+        h3{
+            text-align:left;
+            
+        }
+    }
+
+    .front{
+        .flex(space-around,center);
+        flex-wrap:wrap;
+        padding-bottom: 5vh;
+        @media @phone {
+            flex-direction: column;
+            }
+    }
+
+    .back{
+        .flex(space-between,center);
+        padding:5vh;
+        @media @phone {
+            flex-direction: column;
+            
+            }
+    }
+
+    .lead{
+        .flex(space-between,center);
+        padding:5vh;
+        @media @phone {
+            flex-direction: column;
+            }
+    }
+}

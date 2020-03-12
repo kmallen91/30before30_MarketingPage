@@ -1,0 +1,183 @@
+ // home
+ //   Carousel of pictures with text to grab attention of user and draw them to sign up
+.carousel{
+    position:relative;
+    height: 80vh;
+    width:100%;
+    // margin: 0 auto;
+    // margin-bottom:20vh;
+    overflow:hidden;
+    
+    @media @phone{
+        // display:none;
+        margin-top:22vh;
+        
+}
+    
+    .carousel__track-container{
+        height:100%;
+        position:relative;
+        width:100%;
+        @media @phone{
+            margin-top:-23vh;
+        }
+        
+
+        .carousel__track{
+            padding:0;
+            margin:0;
+            list-style:none;
+            position:relative;
+            height: 100%;
+            transition: transform 250ms ease-in;
+            width:100%;
+            
+
+            .carousel__slide{
+                
+                position:absolute;
+                top:0;
+                width:100%;                
+                .carousel__images{
+                     width:100%;
+                     height:100%;
+                    object-fit: cover;
+                    
+                    @media @phone{
+                        object-fit:scale-down;
+                        margin-top:22vh;
+                        // background-color:black;
+                    }
+                 }
+            }
+        }
+
+        
+    }
+    .carousel__button{
+        position:absolute;
+        top:50%;
+        height:150px;
+        background:transparent;
+        border:0;
+        cursor:pointer;
+        
+        img{
+            width: 50px;
+        }
+        
+
+
+        
+    }
+    .button-left{
+           left:0px;
+           z-index:1;
+           
+        }
+
+    .button-right{
+            right:0px;
+             
+    }
+
+    .carousel__nav{
+        display:flex;
+        justify-content: center;
+        margin-top: 20vh;
+        display:none;
+    }
+
+    .carousel__indicator{
+        border:0;
+        border-radius:50%;
+        width:20px;
+        height:20px;
+        background:rgba(0,0,0,.3);
+        margin: 0 10px;
+        cursor:pointer;
+
+        .current-slide{
+            background: rgba(0,0,0,.75);
+        }
+    }
+    .is-hidden {
+        display:none;
+    }
+}
+//Phone width images//
+
+// @media @phone {
+
+// }
+
+
+
+
+
+
+
+
+// Achieve button allows user to access app and sign up
+.achieve{
+    width: 100%;
+    height:40vh;
+    background-color: @lightblue;
+    padding:20px;
+    display:flex;
+    justify-content: center;
+    align-items:flex-end;
+    padding-bottom:0px;
+
+    @media @phone {
+        margin-top:-23vh;
+    }
+
+    button{
+        .button(@button-bg, 200px, #fff);
+
+        p{ 
+            font-size:2.5rem;
+        }
+    }
+}
+
+//Footer, allows user to access About Us page, log in or access the app
+
+footer{
+    background-color:@black;
+    height:10vh;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    color:@white;
+    font-size:3rem;
+    @media @phone{
+        margin-top:10vh;
+    }
+
+    .footbar{
+        display:flex;
+        justify-content:space-around;
+        @media @phone{
+            flex-wrap:wrap;
+            
+            
+        }
+    }
+
+    a{
+        text-decoration: none;
+        color:@white;
+        padding:20px;
+        @media @phone{
+            width:100%;
+            background-color: black;
+            text-align:center;
+           
+            
+            
+
+        }
+        }
+}

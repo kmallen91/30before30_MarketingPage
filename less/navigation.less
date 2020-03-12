@@ -1,0 +1,74 @@
+// Navigation Styles here
+
+// Navigation bar
+
+.top{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: @black;
+    color:@white;
+    padding-bottom:0px;
+    height:20vh;
+    
+    @media @phone {
+        // flex-wrap:wrap;
+        flex-direction: column;
+        margin-bottom:0vh;
+        padding-bottom: -40vh;
+        
+        
+
+    }
+
+    .title{
+        padding:15px;
+        font-size:5rem;
+        // background-color:white;
+        width:20vh;
+            @media @phone {
+                display:flex;
+                width: 100%;
+                justify-content: center;
+                background-color:black;
+                
+            
+             }
+    }
+
+    .navbar{
+        font-size:3rem;
+        color:white;
+        padding:15px;
+        @media @phone {
+            background-color:black;
+            width:100%;
+            text-align:center;
+        }
+        
+
+        .links{
+            color:@white;
+            @media @phone {
+                background-color:black;
+                display:flex;
+                justify-content: center;
+                flex-direction: column;
+                width:100%;
+
+            }
+
+            a{
+                text-decoration: none;
+                color:@white;
+                padding:20px;
+                @media @phone{
+                    background-color: black;
+                    }
+                }
+            }
+        
+    }
+
+}
+
